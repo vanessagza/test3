@@ -1,0 +1,144 @@
+// translations/it.json
+{
+  "navItems": [
+    { "title": "Inizio",            "page": "home"    },
+    { "title": "Chi siamo",         "page": "about"   },
+    { "title": "Servizi",           "page": "services"},
+    { "title": "Domande frequenti", "page": "faq"     },
+    { "title": "Contattaci",        "page": "contact" }
+  ],
+  "services": [
+    {
+      "name": "Sviluppo di applicazioni desktop",
+      "description": "Applicazioni native per Windows, macOS e Linux che funzionano offline o si integrano con sistemi esterni."
+    },
+    {
+      "name": "Sviluppo web",
+      "description": "Siti web e web app reattivi e scalabili, comprese interfacce front-end, logica back-end e sistemi full-stack."
+    },
+    {
+      "name": "Sviluppo di app mobili",
+      "description": "Progettazione e sviluppo di app per Android e iOS, ottimizzate per prestazioni, usabilità e standard di piattaforma."
+    },
+    {
+      "name": "Sicurezza informatica",
+      "description": "Valutazioni delle vulnerabilità, penetration testing, patch di sicurezza, integrazione 2FA/SSO, crittografia dei dati e monitoraggio continuo."
+    },
+    {
+      "name": "IA, dati e apprendimento automatico",
+      "description": "Creazione di pipeline di dati, sviluppo di modelli ML/DL, soluzioni NLP, analisi predittiva e dashboard interattive."
+    },
+    {
+      "name": "Sviluppo e integrazione di API",
+      "description": "Progettazione di API RESTful e GraphQL, documentazione, gestione delle versioni, deployment e integrazioni con servizi di terze parti."
+    },
+    {
+      "name": "Sviluppo e-commerce",
+      "description": "Negozi online personalizzati, integrazione di gateway di pagamento, sistemi di gestione dell'inventario e manutenzione continua."
+    },
+    {
+      "name": "Sviluppo di giochi",
+      "description": "Progettazione di giochi 2D/3D, esperienze di realtà virtuale/aumentata, realtà mista e networking multiplayer."
+    },
+    {
+      "name": "Blockchain",
+      "description": "Sviluppo di criptovalute, creazione di smart contract, integrazione blockchain e sviluppo di applicazioni decentralizzate (DApp)."
+    },
+    {
+      "name": "Analisi aziendale",
+      "description": "Integrazione di piattaforme di analisi, tracciamento di eventi personalizzati, reportistica automatizzata e creazione di dashboard KPI."
+    },
+    {
+      "name": "Formazione e documentazione",
+      "description": "Manuali tecnici, guide utente, corsi, tutorial, workshop e progettazione di curriculum per bootcamp."
+    },
+    {
+      "name": "Manutenzione e supporto",
+      "description": "Correzione continua di bug, aggiornamenti di versione, ottimizzazione delle prestazioni e pacchetti di supporto SLA."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Quali servizi offrite?",
+      "a": "Offriamo soluzioni tecnologiche end-to-end: applicazioni desktop, web e mobile; sicurezza informatica; IA e data science; progettazione di API; e-commerce; sviluppo di giochi; blockchain; analisi aziendale; documentazione; e manutenzione e supporto continuativi."
+    },
+    {
+      "q": "Come posso richiedere un preventivo?",
+      "a": "Inviaci un'email a contact@omnisyn.com.mx con una panoramica del progetto, obiettivi, ambito, tempistiche, budget, tecnologie richieste e dettagli sulla tua azienda. Risponderemo con un preventivo personalizzato."
+    },
+    {
+      "q": "In quali settori operate?",
+      "a": "Collaboriamo con organizzazioni nei settori finanziario, sanitario, retail, manifatturiero, educativo e altri che necessitano di soluzioni tecnologiche sicure e scalabili."
+    },
+    {
+      "q": "Quali stack tecnologici utilizzate?",
+      "a": "I nostri esperti lavorano con React, Angular, Vue, Node.js, .NET, Java, Python, Kotlin/Swift, Unity/Unreal, TensorFlow/PyTorch e le principali piattaforme cloud (AWS, Azure, GCP)."
+    },
+    {
+      "q": "Potete integrare i sistemi esistenti?",
+      "a": "Sì. Realizziamo API e connettori per collegare in modo trasparente le nuove applicazioni con ERP, CRM e piattaforme on-premise esistenti."
+    },
+    {
+      "q": "Come garantite la sicurezza?",
+      "a": "Seguiamo le best practice OWASP Top 10 e ISO 27001, eseguiamo analisi delle vulnerabilità, penetration test, implementiamo crittografia, 2FA/SSO e monitoraggio continuo."
+    },
+    {
+      "q": "Offrite supporto continuativo?",
+      "a": "Assolutamente: i nostri pacchetti con SLA coprono correzioni di bug, ottimizzazione delle prestazioni, aggiornamenti di versione e patch di sicurezza."
+    },
+    {
+      "q": "Come gestite la privacy dei dati?",
+      "a": "Implementiamo controlli di accesso basati sui ruoli, crittografia dei dati in transito e a riposo e rispettiamo GDPR, HIPAA o normative locali sulla privacy, secondo necessità."
+    },
+    {
+      "q": "Potete formare il nostro team?",
+      "a": "Offriamo workshop personalizzati, tutorial pratici e documentazione completa affinché il vostro team possa gestire e estendere la soluzione."
+    },
+    {
+      "q": "Quali garanzie offrite?",
+      "a": "Tutte le consegne includono un periodo di supporto di 30 giorni post-lancio e il nostro processo QA garantisce elevati standard di qualità fin dal primo giorno."
+    }
+  ],
+  "content": {
+    "home": {
+      "aboutTitle": "Informazioni su OmniSyn Technologies",
+      "aboutText": "OmniSyn Technologies è un'azienda tecnologica con sede a Monterrey, specializzata in cybersecurity, software personalizzato e servizi di information technology. Aiutiamo le imprese a proteggere i loro asset digitali tramite servizi quali penetration testing, valutazioni del rischio e pianificazione della difesa informatica. Progettiamo inoltre soluzioni software personalizzate — inclusi strumenti basati sull’IA — per supportare gli obiettivi operativi di ogni cliente. In OmniSyn, uniamo innovazione e sicurezza per aiutare le organizzazioni a crescere con fiducia.",
+      "ourServicesTitle": "I nostri servizi",
+      "getQuoteTitle": "Richiedi un preventivo",
+      "getQuoteText": "Invia un'email a <a href=\"mailto:contact@omnisyn.com.mx\">contact@omnisyn.com.mx</a> includendo:",
+      "getQuoteList": [
+        "Panoramica del progetto e obiettivi",
+        "Ambito e tempistiche previste",
+        "Fascia di budget",
+        "Tecnologie/piattaforme richieste",
+        "Il tuo nome e la tua azienda"
+      ],
+      "downloadButton": "Scarica il catalogo dei servizi"
+    },
+    "about": {
+      "title": "Chi siamo",
+      "intro": "OmniSyn è una società di consulenza tecnologica con sede a Monterrey, specializzata in cybersecurity, IA e dati, e soluzioni software personalizzate. Collaboriamo con le aziende per proteggere, ottimizzare e far crescere il loro patrimonio digitale utilizzando tecnologie all'avanguardia e le migliori pratiche.",
+      "missionTitle": "Missione",
+      "missionText": "Fornire soluzioni tecnologiche all'avanguardia con standard di sicurezza senza compromessi.",
+      "visionTitle": "Visione",
+      "visionText": "Diventare il partner di riferimento nell'innovazione tecnologica e nella resilienza informatica per le organizzazioni di tutto il mondo."
+    },
+    "servicesPage": {
+      "title": "I nostri servizi",
+      "searchPlaceholder": "Cerca servizi…"
+    },
+    "faqPage": {
+      "title": "Domande frequenti"
+    },
+    "contactPage": {
+      "title": "Contattaci"
+    }
+  },
+  "carouselAlts": [
+    "Diapositiva 1",
+    "Diapositiva 2",
+    "Diapositiva 3",
+    "Diapositiva 4",
+    "Diapositiva 5"
+  ]
+}
