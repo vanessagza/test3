@@ -1,0 +1,46 @@
+/* style.css */
+:root {
+  --primary: #2d3250;
+  --white: #ffffff;
+  --text: #333333;
+  --gray-light: #f7f7f7;   /* lighter card background */
+  --gray-lighter: #fafafa; /* alternate */
+  --gray-dark: #777777;
+  --transition: 0.3s ease;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--white);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Header/Nav unchanged */
+
+/* Main sections spacing */
+.main-content section {
+  margin-bottom: 4rem;  /* increased spacing */
+}
+
+/* Service cards – light gray bg */
+.service-card {
+  background: var(--gray-light);
+  border: 1px solid var(--gray-lighter);
+  /* rest unchanged */
+}
+
+/* Quote section – remove blue link */
+.quote-section {
+  background: var(--primary);
+  color: var(--white);
+}
+.quote-section a {
+  color: var(--white) !important;
+  text-decoration: underline;
+}
+
+/* Download & Contact unchanged */
+
+/* Footer unchanged */
