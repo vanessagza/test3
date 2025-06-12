@@ -1,37 +1,102 @@
-
 {
   "navItems": [
-    { "title": "Home",      "page": "home"    },
-    { "title": "About Us",  "page": "about"   },
-    { "title": "Services",  "page": "services"},
-    { "title": "FAQ",       "page": "faq"     },
-    { "title": "Contact Us","page": "contact" }
+    { "title": "Home",       "page": "home"    },
+    { "title": "About Us",   "page": "about"   },
+    { "title": "Services",   "page": "services"},
+    { "title": "FAQ",        "page": "faq"     },
+    { "title": "Contact Us", "page": "contact" }
   ],
   "services": [
-    { "name": "Desktop Application Development", "description": "Native apps for Windows, macOS, and Linux that run offline or integrate with external systems." },
-    { "name": "Web Development",                  "description": "Responsive, scalable websites and web apps, including front-end interfaces, back-end logic, and full-stack systems." },
-    { "name": "Mobile App Development",           "description": "Designing and developing mobile apps for Android and iOS, optimized for performance, usability, and platform standards." },
-    { "name": "Cybersecurity",                    "description": "Vulnerability assessments, penetration testing, security patching, 2FA/SSO integration, data encryption, and continuous monitoring." },
-    { "name": "AI, Data & Machine Learning",      "description": "Data pipelines, ML/DL model development, NLP solutions, predictive analytics, and interactive dashboards." },
-    { "name": "API Development & Integration",    "description": "RESTful & GraphQL API design, documentation, versioning, deployment, and third-party integrations." },
-    { "name": "E-Commerce Development",           "description": "Custom online stores, payment gateway integration, inventory management systems, and ongoing shop maintenance." },
-    { "name": "Game Development",                 "description": "2D/3D game design, virtual & augmented reality experiences, mixed reality, and multiplayer networking." },
-    { "name": "Blockchain",                       "description": "Cryptocurrency creation, smart-contract development, blockchain integration, and decentralized application (DApp) services." },
-    { "name": "Business Analytics",               "description": "Analytics platform integration, custom event tracking, automated reporting, and KPI dashboard creation." },
-    { "name": "Education & Documentation",        "description": "Technical manuals, user guides, courses, tutorials, workshops, and curriculum design for bootcamps." },
-    { "name": "Maintenance & Support",            "description": "Ongoing bug fixes, version upgrades, performance tuning, and SLA-backed support packages." }
+    {
+      "name": "Desktop Application Development",
+      "description": "Native apps for Windows, macOS, and Linux that run offline or integrate with external systems."
+    },
+    {
+      "name": "Web Development",
+      "description": "Responsive, scalable websites and web apps, including front-end interfaces, back-end logic, and full-stack systems."
+    },
+    {
+      "name": "Mobile App Development",
+      "description": "Designing and developing mobile apps for Android and iOS, optimized for performance, usability, and platform standards."
+    },
+    {
+      "name": "Cybersecurity",
+      "description": "Vulnerability assessments, penetration testing, security patching, 2FA/SSO integration, data encryption, and continuous monitoring."
+    },
+    {
+      "name": "AI, Data & Machine Learning",
+      "description": "Data pipelines, ML/DL model development, NLP solutions, predictive analytics, and interactive dashboards."
+    },
+    {
+      "name": "API Development & Integration",
+      "description": "RESTful & GraphQL API design, documentation, versioning, deployment, and third-party integrations."
+    },
+    {
+      "name": "E-Commerce Development",
+      "description": "Custom online stores, payment gateway integration, inventory management systems, and ongoing shop maintenance."
+    },
+    {
+      "name": "Game Development",
+      "description": "2D/3D game design, virtual & augmented reality experiences, mixed reality, and multiplayer networking."
+    },
+    {
+      "name": "Blockchain",
+      "description": "Cryptocurrency creation, smart-contract development, blockchain integration, and decentralized application (DApp) services."
+    },
+    {
+      "name": "Business Analytics",
+      "description": "Analytics platform integration, custom event tracking, automated reporting, and KPI dashboard creation."
+    },
+    {
+      "name": "Education & Documentation",
+      "description": "Technical manuals, user guides, courses, tutorials, workshops, and curriculum design for bootcamps."
+    },
+    {
+      "name": "Maintenance & Support",
+      "description": "Ongoing bug fixes, version upgrades, performance tuning, and SLA-backed support packages."
+    }
   ],
   "faq": [
-    { "q": "What services do you offer?", "a": "We provide end-to-end technology solutions: desktop, web & mobile apps; cybersecurity; AI & data science; API design; e-commerce; game dev; blockchain; analytics; documentation; and ongoing maintenance & support." },
-    { "q": "How can I request a quote?", "a": "Email us at contact@omnisyn.com.mx with your project overview, objectives, scope, timeline, budget range, required technologies, and company details. We’ll reply with a tailored estimate." },
-    { "q": "Which industries do you serve?", "a": "We partner with organizations in finance, healthcare, retail, manufacturing, education, and more—anyone who needs secure and scalable tech solutions." },
-    { "q": "Which tech stacks do you use?", "a": "Our experts work with React, Angular, Vue, Node.js, .NET, Java, Python, Kotlin/Swift, Unity/Unreal, TensorFlow/PyTorch, and AWS/Azure/GCP." },
-    { "q": "Can you integrate with existing systems?", "a": "Yes. We build APIs and connectors to seamlessly bridge new applications with legacy ERPs, CRMs, and on-premise platforms." },
-    { "q": "How do you approach security?", "a": "We follow OWASP Top 10 and ISO 27001, conduct vulnerability scans and penetration tests, implement encryption, 2FA/SSO, and continuous monitoring." },
-    { "q": "Is ongoing support available?", "a": "Absolutely—our SLA-backed packages cover bug fixes, performance tuning, version upgrades, and security patching." },
-    { "q": "How do you handle data privacy?", "a": "We implement role-based access control, encryption at rest/in transit, and comply with GDPR, HIPAA, or local privacy regulations as needed." },
-    { "q": "Can you train our team?", "a": "Yes—we provide tailored workshops, hands-on tutorials, and full documentation so your staff can manage and extend your solution." },
-    { "q": "What guarantees do you offer?", "a": "All deliveries include a 30-day post-launch support window, and our QA process ensures high quality from day one." }
+    {
+      "q": "What services do you offer?",
+      "a": "We provide end-to-end technology solutions: desktop, web & mobile apps; cybersecurity; AI & data science; API design; e-commerce; game dev; blockchain; analytics; documentation; and ongoing maintenance & support."
+    },
+    {
+      "q": "How can I request a quote?",
+      "a": "Email us at contact@omnisyn.com.mx with your project overview, objectives, scope, timeline, budget range, required technologies, and company details. We’ll reply with a tailored estimate."
+    },
+    {
+      "q": "Which industries do you serve?",
+      "a": "We partner with organizations in finance, healthcare, retail, manufacturing, education, and more—anyone who needs secure and scalable tech solutions."
+    },
+    {
+      "q": "Which tech stacks do you use?",
+      "a": "Our experts work with React, Angular, Vue, Node.js, .NET, Java, Python, Kotlin/Swift, Unity/Unreal, TensorFlow/PyTorch, and AWS/Azure/GCP."
+    },
+    {
+      "q": "Can you integrate with existing systems?",
+      "a": "Yes. We build APIs and connectors to seamlessly bridge new applications with legacy ERPs, CRMs, and on-premise platforms."
+    },
+    {
+      "q": "How do you approach security?",
+      "a": "We follow OWASP Top 10 and ISO 27001, conduct vulnerability scans and penetration tests, implement encryption, 2FA/SSO, and continuous monitoring."
+    },
+    {
+      "q": "Is ongoing support available?",
+      "a": "Absolutely—our SLA-backed packages cover bug fixes, performance tuning, version upgrades, and security patching."
+    },
+    {
+      "q": "How do you handle data privacy?",
+      "a": "We implement role-based access control, encryption at rest/in transit, and comply with GDPR, HIPAA, or local privacy regulations as needed."
+    },
+    {
+      "q": "Can you train our team?",
+      "a": "Yes—we provide tailored workshops, hands-on tutorials, and full documentation so your staff can manage and extend your solution."
+    },
+    {
+      "q": "What guarantees do you offer?",
+      "a": "All deliveries include a 30-day post-launch support window, and our QA process ensures high quality from day one."
+    }
   ],
   "content": {
     "home": {
@@ -57,9 +122,16 @@
       "visionTitle": "Vision",
       "visionText": "Be the leading partner in technology innovation and cyber resilience for organizations worldwide."
     },
-    "servicesPage": { "title": "Our Services", "searchPlaceholder": "Search services…" },
-    "faqPage":       { "title": "FAQ" },
-    "contactPage":   { "title": "Contact Us" }
+    "servicesPage": {
+      "title": "Our Services",
+      "searchPlaceholder": "Search services…"
+    },
+    "faqPage": {
+      "title": "FAQ"
+    },
+    "contactPage": {
+      "title": "Contact Us"
+    }
   },
   "carouselAlts": ["Slide 1","Slide 2","Slide 3","Slide 4","Slide 5"]
 }
