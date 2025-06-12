@@ -1,10 +1,9 @@
-/* style.css */
 :root {
   --primary: #2d3250;
   --white: #ffffff;
   --text: #333333;
-  --gray-light: #f7f7f7;   /* lighter card background */
-  --gray-lighter: #fafafa; /* alternate */
+  --gray-light: #f7f7f7;
+  --gray-lighter: #fafafa;
   --gray-dark: #777777;
   --transition: 0.3s ease;
 }
@@ -17,30 +16,158 @@ body {
   line-height: 1.6;
 }
 
-/* Header/Nav unchanged */
+/* Header & Nav */
+.site-header {
+  display: flex; align-items: center;
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky; top: 0; z-index: 100;
+}
+.logo { height: 65px; cursor: pointer; }
+.site-nav { margin-left: auto; }
+.nav-list { display: flex; gap: 1.5rem; list-style: none; }
+.nav-list li {
+  cursor: pointer; padding: 0.5rem;
+  color: var(--gray-dark);
+  transition: color var(--transition);
+}
+.nav-list li.active,
+.nav-list li:hover { color: var(--primary); }
 
-/* Main sections spacing */
-.main-content section {
-  margin-bottom: 4rem;  /* increased spacing */
+/* Language selector */
+#lang-select {
+  margin-left: 1rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--gray-dark);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--text);
 }
 
-/* Service cards – light gray bg */
+/* Main content sections */
+.main-content section {
+  margin-bottom: 4rem;
+}
+.main-content {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.main-content.visible {
+  opacity: 1;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  margin-bottom: 2rem;
+}
+.slides {
+  display: flex;
+  transition: transform var(--transition);
+  height: 100%;
+}
+.slides img {
+  min-width: 100%;
+  object-fit: cover;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none; color: #fff;
+  padding: 0.5rem; cursor: pointer;
+  border-radius: 50%;
+}
+.prev { left: 1rem; }
+.next { right: 1rem; }
+
+/* Services grid */
+.service-search {
+  width: 100%; max-width: 400px;
+  padding: 0.5rem; margin-bottom: 1.5rem;
+  border: 1px solid var(--gray-dark);
+  border-radius: 4px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
 .service-card {
   background: var(--gray-light);
   border: 1px solid var(--gray-lighter);
-  /* rest unchanged */
+  border-radius: 4px;
+  padding: 1rem;
+  transition: box-shadow var(--transition);
+}
+.service-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.service-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
 }
 
-/* Quote section – remove blue link */
-.quote-section {
+/* Quote & Download */
+.quote-section,
+.contact-card {
   background: var(--primary);
   color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
 }
-.quote-section a {
+.quote-section a,
+.contact-card a {
   color: var(--white) !important;
   text-decoration: underline;
 }
+.download-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+button.pdf-btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+button.pdf-btn:hover {
+  background: #1f2438;
+}
 
-/* Download & Contact unchanged */
+/* FAQ */
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+.faq-item h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
 
-/* Footer unchanged */
+/* Footer */
+.site-footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 2rem 1rem;
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: center;
+}
+.site-footer nav ul {
+  display: flex; gap: 1rem; list-style: none;
+}
+.site-footer nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+.site-footer nav a:hover {
+  text-decoration: underline;
+}
