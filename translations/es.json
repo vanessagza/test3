@@ -1,0 +1,58 @@
+
+{
+  "navItems": [
+    { "title": "Inicio",          "page": "home"    },
+    { "title": "Sobre Nosotros",  "page": "about"   },
+    { "title": "Servicios",       "page": "services"},
+    { "title": "Preguntas Frecuentes", "page": "faq" },
+    { "title": "Contáctanos",     "page": "contact" }
+  ],
+  "services": [
+    { "name": "Desarrollo de Aplicaciones de Escritorio", "description": "Aplicaciones nativas para Windows, macOS y Linux que funcionan sin conexión o se integran con sistemas externos." },
+    { "name": "Desarrollo Web",                            "description": "Sitios web y aplicaciones web escalables y responsivas, con interfaces front-end, lógica back-end y sistemas full-stack." },
+    { "name": "Desarrollo de Apps Móviles",                "description": "Diseño y desarrollo de apps para Android e iOS optimizadas en rendimiento, usabilidad y estándares de plataforma." },
+    { "name": "Ciberseguridad",                           "description": "Evaluaciones de vulnerabilidades, pruebas de penetración, actualizaciones de seguridad, 2FA/SSO, cifrado de datos y monitoreo continuo." },
+    { "name": "IA, Datos y Machine Learning",              "description": "Canales de datos, desarrollo de modelos ML/DL, soluciones NLP, analíticas predictivas y tableros interactivos." },
+    { "name": "Desarrollo e Integración de API",           "description": "Diseño de API REST y GraphQL, documentación, versionado, despliegue e integraciones con servicios externos." },
+    { "name": "Comercio Electrónico",                     "description": "Tiendas en línea personalizadas, integración de pasarelas de pago, gestión de inventario y mantenimiento continuo." },
+    { "name": "Desarrollo de Juegos",                      "description": "Diseño de juegos 2D/3D, experiencias de realidad virtual/aumentada, realidad mixta y redes multijugador." },
+    { "name": "Blockchain",                                "description": "Desarrollo de criptomonedas, smart contracts, integración blockchain y desarrollo de DApps." },
+    { "name": "Analítica de Negocio",                     "description": "Integración de plataformas de analítica, seguimiento de eventos, generación automática de reportes y tableros KPI." },
+    { "name": "Educación y Documentación",                 "description": "Manuales técnicos, guías de usuario, cursos, tutoriales, talleres y diseño curricular para bootcamps." },
+    { "name": "Mantenimiento y Soporte",                   "description": "Corrección de errores, actualizaciones de versión, optimización de rendimiento y paquetes SLA." }
+  ],
+  "faq": [
+    { "q": "¿Qué servicios ofrecen?", "a": "Ofrecemos soluciones tecnológicas integrales: apps de escritorio, web y móviles; ciberseguridad; IA y ciencia de datos; diseño de API; comercio electrónico; desarrollo de juegos; blockchain; analítica; documentación; y mantenimiento continuo." },
+    { "q": "¿Cómo solicito una cotización?", "a": "Envíanos un correo a contact@omnisyn.com.mx con descripción del proyecto, objetivos, alcance, cronograma, presupuesto, tecnologías necesarias y datos de tu empresa. Te responderemos con un estimado a medida." },
+    { "q": "¿En qué industrias trabajan?", "a": "Colaboramos con finanzas, salud, retail, manufactura, educación y más—cualquier organización que necesite soluciones tecnológicas seguras y escalables." },
+    { "q": "¿Qué tecnologías utilizan?", "a": "Nuestra experiencia incluye React, Angular, Vue, Node.js, .NET, Java, Python, Kotlin/Swift, Unity/Unreal, TensorFlow/PyTorch y AWS/Azure/GCP." },
+    { "q": "¿Pueden integrar sistemas existentes?", "a": "Sí. Creamos API y conectores para unir nuevas aplicaciones con ERPs, CRMs y plataformas on-premise de forma transparente." },
+    { "q": "¿Cómo abordan la seguridad?", "a": "Seguimos OWASP Top 10 e ISO 27001, realizamos escaneos de vulnerabilidades, pruebas de penetración, cifrado, 2FA/SSO y monitoreo continuo." },
+    { "q": "¿Ofrecen soporte continuo?", "a": "Claro—nuestros paquetes con SLA cubren corrección de errores, optimización, actualizaciones y parches de seguridad." },
+    { "q": "¿Cómo manejan la privacidad de datos?", "a": "Implementamos control de acceso por roles, cifrado en reposo/transmisión y cumplimos GDPR, HIPAA o normativas locales según tu sector." },
+    { "q": "¿Imparten capacitación?", "a": "Sí—ofrecemos talleres personalizados, tutoriales prácticos y documentación completa para que tu equipo administre y extienda la solución." },
+    { "q": "¿Qué garantías ofrecen?", "a": "Incluimos 30 días de soporte post-lanzamiento y nuestro proceso de QA asegura alta calidad desde el primer día." }
+  ],
+  "content": {
+    "home": {
+      "aboutTitle": "Sobre OmniSyn Technologies",
+      "aboutText": "OmniSyn Technologies es una empresa tecnológica con sede en Monterrey, especializada en ciberseguridad, software a medida y servicios de tecnología de la información. Ayudamos a las empresas a proteger sus activos digitales mediante servicios como pruebas de penetración, evaluaciones de riesgo y planificación de defensa cibernética. También diseñamos soluciones de software personalizadas —incluyendo herramientas impulsadas por IA— para respaldar los objetivos operativos de cada cliente. En OmniSyn, combinamos innovación y seguridad para ayudar a las organizaciones a crecer con confianza.",
+      "ourServicesTitle": "Nuestros Servicios",
+      "getQuoteTitle": "Solicita una Cotización",
+      "getQuoteText": "Envíanos un correo a <a href=\"mailto:contact@omnisyn.com.mx\">contact@omnisyn.com.mx</a> con:",
+      "getQuoteList": [
+        "Descripción y objetivos del proyecto",
+        "Alcance y cronograma",
+        "Rango de presupuesto",
+        "Tecnologías/plataformas requeridas",
+        "Tu nombre y datos de la empresa"
+      ],
+      "downloadButton": "Descargar Catálogo de Servicios"
+    },
+    "about": { /* unchanged */ },
+    "servicesPage": { /* unchanged */ },
+    "faqPage":       { /* unchanged */ },
+    "contactPage":   { /* unchanged */ }
+  },
+  "carouselAlts": ["Diapositiva 1","Diapositiva 2","Diapositiva 3","Diapositiva 4","Diapositiva 5"]
+}
