@@ -186,7 +186,7 @@ button.pdf-btn:hover {
 .nav-toggle span {
   display: block;
   height: 3px;
-  background: var(--text);
+  background: var(--primary) !important;
   border-radius: 2px;
 }
 
