@@ -1,3 +1,5 @@
+this is my full css code. can you just integrate the code into this and provide the full code back to me instead of me changing the code. so that i just copy and paste the full code
+
 :root {
   --primary: #2d3250;
   --white: #ffffff;
@@ -7,9 +9,8 @@
   --gray-dark: #777777;
   --transition: 0.3s ease;
 }
-* {
-  margin: 0; padding: 0; box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
   font-family: 'Inter', sans-serif;
   background: var(--white);
@@ -19,37 +20,22 @@ body {
 
 /* Header & Nav */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
+  display: flex; align-items: center;
   padding: 0.5rem 1rem;
   background: var(--white);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky; top: 0; z-index: 100;
 }
-.logo {
-  height: 65px;
-  cursor: pointer;
-}
-.site-nav {
-  margin-left: auto;
-}
-.nav-list {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
+.logo { height: 65px; cursor: pointer; }
+.site-nav { margin-left: auto; }
+.nav-list { display: flex; gap: 1.5rem; list-style: none; }
 .nav-list li {
-  cursor: pointer;
-  padding: 0.5rem;
+  cursor: pointer; padding: 0.5rem;
   color: var(--gray-dark);
   transition: color var(--transition);
 }
 .nav-list li.active,
-.nav-list li:hover {
-  color: var(--primary);
-}
+.nav-list li:hover { color: var(--primary); }
 
 /* Language selector */
 #lang-select {
@@ -61,7 +47,10 @@ body {
   color: var(--text);
 }
 
-/* Main content */
+/* Main content sections */
+.main-content section {
+  margin-bottom: 4rem;
+}
 .main-content {
   max-width: 1100px;
   margin: 2rem auto;
@@ -71,9 +60,6 @@ body {
 }
 .main-content.visible {
   opacity: 1;
-}
-.main-content section {
-  margin-bottom: 4rem;
 }
 
 /* Carousel */
@@ -94,13 +80,10 @@ body {
 }
 .carousel-button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%; transform: translateY(-50%);
   background: rgba(0,0,0,0.4);
-  border: none;
-  color: #fff;
-  padding: 0.5rem;
-  cursor: pointer;
+  border: none; color: #fff;
+  padding: 0.5rem; cursor: pointer;
   border-radius: 50%;
 }
 .prev { left: 1rem; }
@@ -108,10 +91,8 @@ body {
 
 /* Services grid */
 .service-search {
-  width: 100%;
-  max-width: 400px;
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
+  width: 100%; max-width: 400px;
+  padding: 0.5rem; margin-bottom: 1.5rem;
   border: 1px solid var(--gray-dark);
   border-radius: 4px;
 }
@@ -176,18 +157,14 @@ button.pdf-btn:hover {
 
 /* Footer */
 .site-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 1rem;
   background: var(--primary);
   color: var(--white);
+  padding: 2rem 1rem;
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: center;
 }
 .site-footer nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
+  display: flex; gap: 1rem; list-style: none;
 }
 .site-footer nav a {
   color: var(--white);
@@ -197,35 +174,30 @@ button.pdf-btn:hover {
   text-decoration: underline;
 }
 
-/* ─── Hamburger Toggle (desktop hidden) ─── */
+/* 1. Hide toggle by default */
 .nav-toggle {
-  display: none;               /* hide on desktop */
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
-  width: 24px;
-  height: 18px;
+  width: 24px; height: 18px;
   padding: 0;
-  z-index: 500;                /* above select */
+  z-index: 200; 
 }
 .nav-toggle span {
   display: block;
   height: 3px;
-  background: var(--primary);  /* dark lines */
+  background: var(--primary);
   border-radius: 2px;
-  margin: 2px 0;
 }
 
-/* ─── Mobile Menu ─── */
+/* 2. Mobile: show toggle & hide nav-list */
 @media (max-width: 768px) {
   .nav-toggle {
-    display: flex;             /* show on mobile */
+    display: flex;
+    margin-left: auto;
   }
   .nav-list {
     display: flex;
@@ -234,19 +206,19 @@ button.pdf-btn:hover {
     top: 100%;
     left: 0;
     right: 0;
-    max-height: 0;
+    max-height: 0;                /* collapsed */
     overflow: hidden;
     background: var(--white);
     border-top: 1px solid var(--gray-light);
     transition: max-height var(--transition);
     z-index: 150;
   }
-  /* tighter padding on mobile menu items */
   .nav-list li {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-bottom: 1px solid var(--gray-light);
   }
+  /* When header gets .nav-open, show menu */
   .site-header.nav-open .nav-list {
-    max-height: 400px;         /* enough to show all items */
+    max-height: 500px; 
   }
 }
