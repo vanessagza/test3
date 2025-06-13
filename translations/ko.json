@@ -1,4 +1,4 @@
-// translations/ko.json
+
 {
   "navItems": [
     { "title": "홈",              "page": "home"    },
