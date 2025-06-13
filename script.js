@@ -74,10 +74,18 @@ function buildFooterNav() {
 }
 
 function showPage(page) {
+  // 1️⃣ Close mobile menu (remove the nav-open flag)
+  document.querySelector('.site-header').classList.remove('nav-open');
+
+  // 2️⃣ Highlight the active nav item
   Array.from(navList.children).forEach(li =>
     li.classList.toggle('active', li.dataset.page === page)
   );
+
+  // 3️⃣ Fade out existing content
   mainContent.classList.remove('visible');
+
+  // 4️⃣ After a brief pause, render the new page and fade it in
   setTimeout(() => {
     switch (page) {
       case 'home':     renderHome();     break;
@@ -91,6 +99,7 @@ function showPage(page) {
     mainContent.focus();
   }, 100);
 }
+
 
 function renderHome() {
   const c = t.content.home;
