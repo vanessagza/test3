@@ -204,7 +204,7 @@ button.pdf-btn:hover {
   text-decoration: underline;
 }
 
-/* ──────────── Hamburger Toggle (hidden on desktop) ──────────── */
+/* Hamburger toggle (hidden on desktop) */
 .nav-toggle {
   display: none;
   position: absolute;
@@ -229,8 +229,12 @@ button.pdf-btn:hover {
   margin: 2px 0;
 }
 
-/* ──────────── Mobile Menu ──────────── */
+/* Mobile styles */
 @media (max-width: 768px) {
+  /* hide the language selector on mobile */
+  #lang-select {
+    display: none;
+  }
   /* show the hamburger */
   .nav-toggle {
     display: flex;
@@ -250,12 +254,12 @@ button.pdf-btn:hover {
     transition: max-height var(--transition);
     z-index: 150;
   }
-  /* tighter padding on each item */
+  /* tighter padding on each menu item */
   .nav-list li {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--gray-light);
   }
-  /* when header has nav-open, expand */
+  /* expand when open */
   .site-header.nav-open .nav-list {
     max-height: 400px;
   }
