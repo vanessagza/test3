@@ -182,11 +182,12 @@ button.pdf-btn:hover {
   justify-content: space-between;
   width: 24px; height: 18px;
   padding: 0;
+  z-index: 200; 
 }
 .nav-toggle span {
   display: block;
   height: 3px;
-  background: var(--primary) !important;
+  background: var(--primary);
   border-radius: 2px;
 }
 
@@ -197,15 +198,18 @@ button.pdf-btn:hover {
     margin-left: auto;
   }
   .nav-list {
-    display: none;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
-    flex-direction: column;
+    right: 0;
+    max-height: 0;                /* collapsed */
+    overflow: hidden;
     background: var(--white);
     border-top: 1px solid var(--gray-light);
-    z-index: 99;
+    transition: max-height var(--transition);
+    z-index: 150;
   }
   .nav-list li {
     padding: 1rem;
@@ -213,6 +217,6 @@ button.pdf-btn:hover {
   }
   /* When header gets .nav-open, show menu */
   .site-header.nav-open .nav-list {
-    display: flex;
+    max-height: 500px; 
   }
 }
