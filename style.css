@@ -171,3 +171,48 @@ button.pdf-btn:hover {
 .site-footer nav a:hover {
   text-decoration: underline;
 }
+
+/* 1. Hide toggle by default */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px; height: 18px;
+  padding: 0;
+}
+.nav-toggle span {
+  display: block;
+  height: 3px;
+  background: var(--text);
+  border-radius: 2px;
+}
+
+/* 2. Mobile: show toggle & hide nav-list */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--white);
+    border-top: 1px solid var(--gray-light);
+    z-index: 99;
+  }
+  .nav-list li {
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray-light);
+  }
+  /* When header gets .nav-open, show menu */
+  .site-header.nav-open .nav-list {
+    display: flex;
+  }
+}
