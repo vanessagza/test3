@@ -49,6 +49,15 @@ function buildNav() {
   };
 }
 
+// after buildNav() in your init or DOMContentLoaded handler:
+const navToggle = document.getElementById('nav-toggle');
+const header    = document.querySelector('.site-header');
+
+navToggle.addEventListener('click', () => {
+  header.classList.toggle('nav-open');
+});
+
+
 function buildFooterNav() {
   footerNav.innerHTML = '';
   t.navItems.forEach(({ title, page }) => {
